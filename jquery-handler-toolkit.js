@@ -37,8 +37,8 @@ $.fn.hasHandlers = function(events,selector) {
             if((new RegExp('^(' + (events === '*' ? '.+' : events.replace(',','|').replace(/^on/i,'')) + ')$' ,'i')).test(name)) {
                 $.each(handler,
                      function(i,handler){
-							if (handler.selector===selector)
-							result=true;
+			if (handler.selector===selector)
+			result=true;
                 });
             }
         });
