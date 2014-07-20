@@ -20,33 +20,36 @@ Sample calls for listHandlers :
 Samples for HasHandlers():
 
 Tells if node with selector '.container-fluid' has any event handler:
-
+```js
   $('.container-fluid').hasHandlers('*')
 
 --> true or false
+```
 
 Check if node with selector '.container-fluid' has 'click' event handler:
-  
+```js  
   $('.container-fluid').hasHandlers('click')
   
 --> false
+```
 
-Add an event handler 
-
-$('.container-fluid').on('click', function(){});
-
+if you add an event handler like the following 
+```js
+  $('.container-fluid').on('click', function(){});
+then 
   $('.container-fluid').hasHandlers('click')
   
 --> true
-
+```
 Other examples: 
-  
+```js  
   $('.scroll').hasHandlers('mouseout')
-  
+```
 if you use event delegation, meaning for example $('#main').delegate('.adv-search', 'click', function() {}) instead of par  $('.adv-search').click(function() { }), you can still test event handler presence by adding the selector:  
 
+```js  
   $('#main').hasHandlers('click','.simple-search')
-  
+```  
   
   
 
