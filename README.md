@@ -9,11 +9,12 @@ Original code for listHandlers() comes from: http://james.padolsey.com/javascrip
 
 Sample calls for listHandlers :
 
+```js
  $('*').listHandlers('*')
  $('a').listHandlers('onclick')
  or
  if( $('a').listHandlers('onclick')) { ... }
- 
+```
  
  
 Samples for HasHandlers():
