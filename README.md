@@ -4,7 +4,7 @@ jquery-handler-toolkit.js
 Test if event handler is bound to an element in jQuery (1 or many) - and list event handlers
 
 
-**Work with jQuery v1.11.0**
+**Work with jQuery >= v1.11.0**
 
 
 Original code for listHandlers() comes from: http://james.padolsey.com/javascript/debug-jquery-events-with-listhandlers/
