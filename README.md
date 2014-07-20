@@ -7,7 +7,8 @@ Test if event handler is bound to an element in jQuery (1 or many) - and list ev
 
 Original code for listHandlers() comes from: http://james.padolsey.com/javascript/debug-jquery-events-with-listhandlers/
 
-Sample calls for listHandlers :
+Sample calls for listHandlers
+-----------------------------
 
 ```js
  $('*').listHandlers('*')
@@ -17,7 +18,8 @@ Sample calls for listHandlers :
 ```
  
  
-Samples for HasHandlers():
+Samples for HasHandlers()
+-------------------------
 
 Tells if node with selector '.container-fluid' has any event handler:
 ```js
@@ -41,7 +43,9 @@ then
   
 --> true
 ```
-Other examples: 
+Other example in the case of event delegation
+---------------------------------------------
+
 ```js  
   $('.scroll').hasHandlers('mouseout')
 ```
